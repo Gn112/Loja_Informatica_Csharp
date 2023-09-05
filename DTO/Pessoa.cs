@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LojaInformatica
+namespace PessoaDTO
 {
-    internal class Pessoa
+    class Pessoa
     {
         private String nome;
         private int CPF;

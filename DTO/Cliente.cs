@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PessoaDTO;
 
-namespace LojaInformatica
+namespace ClienteDTO
 {
-    internal class Cliente : Pessoa
+    class Cliente : Pessoa
     {
         private int Idcliente;
 
