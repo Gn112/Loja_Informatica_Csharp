@@ -9,15 +9,21 @@ using ClienteDTO;
 
 namespace ClienteBLL
 {
-    internal class ClienteCRUD
+    class ClienteCRUD
     {
         Conexao objDAL = new Conexao();
-
         string tabela = "tbl_cliente";
 
-        public void InserirCliente(ClienteCRUD objProdutoDTO)
+        public void InserirCliente(ClienteDTO objClienteDTO)
         {
-
+            string sql = String.Format($@"INSERT INTO {tabela} VALUES(
+                        '{objClienteDTO.Idcliente}',
+                        '{objClienteDTO.nome}'
+                        '{objClienteDTO.CPF}'
+                        '{objClienteDTO.email}'
+                        '{objClienteDTO.endereco}'
+                        '{objClienteDTO.telefone}')");
+            objClienteDTO.ExecutarComando(sql);
         }
     }
 }
