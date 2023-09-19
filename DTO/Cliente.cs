@@ -11,6 +11,6 @@ namespace ClienteDTO
     {
         private int Idcliente;
 
-        private int IDcliente { get { return Idcliente; } set { Idcliente = value; } }
+        protected int IDcliente { get { return Idcliente; } set { Idcliente = value; } }
     }
 }

@@ -7,14 +7,15 @@ using System.Data;
 using DAL;
 using ClienteDTO;
 
-namespace ClienteBLL
+namespace LojaInformatica.BLL
 {
-    class ClienteCRUD
+
+
+    /*internal class ClienteDAL
     {
         Conexao objDAL = new Conexao();
-        string tabela = "tbl_cliente";
 
-        public void InserirCliente(ClienteDTO objClienteDTO)
+        public void InserirCliente(Cliente objClienteDTO)
         {
             string sql = String.Format($@"INSERT INTO {tabela} VALUES(
                         '{objClienteDTO.Idcliente}',
@@ -25,5 +26,5 @@ namespace ClienteBLL
                         '{objClienteDTO.telefone}')");
             objClienteDTO.ExecutarComando(sql);
         }
-    }
+    }*/
 }
