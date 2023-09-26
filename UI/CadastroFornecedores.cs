@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LojaInformatica.UI
 {
-    public partial class CadastroClientes : Form
+    public partial class CadastroFornecedores : Form
     {
-        public CadastroClientes()
+        public CadastroFornecedores()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

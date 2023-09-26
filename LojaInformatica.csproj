@@ -100,13 +100,31 @@
   <ItemGroup>
     <Compile Include="BLL\ClienteCRUD.cs" />
     <Compile Include="DTO\Cliente.cs" />
-    <Compile Include="DAL\Conexao.cs" />
+    <None Include="DAL\Conexao.cs.bkp" />
     <Compile Include="FabricaConexao.cs" />
     <Compile Include="UI\CadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\CadastroClientes.Designer.cs">
       <DependentUpon>CadastroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CadastroFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CadastroFornecedores.Designer.cs">
+      <DependentUpon>CadastroFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CadastroFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CadastroFuncionarios.Designer.cs">
+      <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CadastroProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CadastroProdutos.Designer.cs">
+      <DependentUpon>CadastroProdutos.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
@@ -130,6 +148,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="UI\CadastroClientes.resx">
       <DependentUpon>CadastroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CadastroFornecedores.resx">
+      <DependentUpon>CadastroFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CadastroFuncionarios.resx">
+      <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CadastroProdutos.resx">
+      <DependentUpon>CadastroProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LojaInformatica.UI
 {
-    public partial class CadastroClientes : Form
+    public partial class CadastroFuncionarios : Form
     {
-        public CadastroClientes()
+        public CadastroFuncionarios()
         {
             InitializeComponent();
         }
