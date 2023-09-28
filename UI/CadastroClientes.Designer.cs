@@ -40,20 +40,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -88,37 +88,37 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // fornecedoresToolStripMenuItem
             // 
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
             // 
             // colaboradoresToolStripMenuItem
             // 
             this.colaboradoresToolStripMenuItem.Name = "colaboradoresToolStripMenuItem";
-            this.colaboradoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colaboradoresToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.colaboradoresToolStripMenuItem.Text = "Colaboradores";
             // 
             // pedidosToolStripMenuItem
             // 
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             // 
             // pagamentosToolStripMenuItem
             // 
             this.pagamentosToolStripMenuItem.Name = "pagamentosToolStripMenuItem";
-            this.pagamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pagamentosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.pagamentosToolStripMenuItem.Text = "Pagamentos";
             // 
             // label3
@@ -149,13 +149,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.txtTelefone);
+            this.panel1.Controls.Add(this.mtxtCpf);
+            this.panel1.Controls.Add(this.mtxtTelefone);
             this.panel1.Controls.Add(this.txtEndereco);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.label2);
@@ -163,14 +163,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(631, 237);
             this.panel1.TabIndex = 10;
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Font = new System.Drawing.Font("Open Sans", 10F);
-            this.txtTelefone.Location = new System.Drawing.Point(354, 112);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(248, 26);
-            this.txtTelefone.TabIndex = 13;
             // 
             // txtEndereco
             // 
@@ -224,14 +216,6 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Email:";
             // 
-            // txtCpf
-            // 
-            this.txtCpf.Font = new System.Drawing.Font("Open Sans", 10F);
-            this.txtCpf.Location = new System.Drawing.Point(354, 49);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(248, 26);
-            this.txtCpf.TabIndex = 13;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -260,19 +244,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(821, 150);
             this.dataGridView1.TabIndex = 11;
             // 
-            // btnLogin
+            // btnCadastrar
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(677, 72);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(162, 36);
-            this.btnLogin.TabIndex = 12;
-            this.btnLogin.Text = "CADASTRAR";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnCadastrar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCadastrar.Location = new System.Drawing.Point(677, 72);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(162, 36);
+            this.btnCadastrar.TabIndex = 12;
+            this.btnCadastrar.Text = "CADASTRAR";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnAlterar
             // 
@@ -316,6 +301,24 @@
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = false;
             // 
+            // mtxtTelefone
+            // 
+            this.mtxtTelefone.Font = new System.Drawing.Font("Open Sans", 10F);
+            this.mtxtTelefone.Location = new System.Drawing.Point(354, 112);
+            this.mtxtTelefone.Mask = "(99) 00000-0000";
+            this.mtxtTelefone.Name = "mtxtTelefone";
+            this.mtxtTelefone.Size = new System.Drawing.Size(248, 26);
+            this.mtxtTelefone.TabIndex = 16;
+            // 
+            // mtxtCpf
+            // 
+            this.mtxtCpf.Font = new System.Drawing.Font("Open Sans", 10F);
+            this.mtxtCpf.Location = new System.Drawing.Point(354, 49);
+            this.mtxtCpf.Mask = "000.000.000-00";
+            this.mtxtCpf.Name = "mtxtCpf";
+            this.mtxtCpf.Size = new System.Drawing.Size(248, 26);
+            this.mtxtCpf.TabIndex = 17;
+            // 
             // CadastroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
@@ -326,7 +329,7 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnAlterar);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.menuStrip1);
@@ -361,18 +364,18 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.MaskedTextBox mtxtTelefone;
+        private System.Windows.Forms.MaskedTextBox mtxtCpf;
     }
 }

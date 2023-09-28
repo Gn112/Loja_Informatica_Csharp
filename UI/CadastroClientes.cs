@@ -15,11 +15,22 @@ namespace LojaInformatica.UI
         public CadastroClientes()
         {
             InitializeComponent();
+            // LerDados();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Cliente cli = new Cliente();
+            cli.Nome = txtNome.Text;
+            cli.Cpf = mtxtCpf.Text;
+            cli.Email = txtEmail.Text;
+            cli.Endereco = txtEndereco.Text;
+            cli.Telefone = mtxtTelefone.Text;
         }
     }
 }
