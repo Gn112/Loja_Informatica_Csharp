@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PessoaDTO;
 
-namespace ClienteDTO
+namespace LojaInformatica
 {
     class Cliente : Pessoa
     {

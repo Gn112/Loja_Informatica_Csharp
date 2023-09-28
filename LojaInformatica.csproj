@@ -98,10 +98,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\ClienteCRUD.cs" />
+    <Compile Include="BLL\Inserir.cs" />
     <Compile Include="DTO\Cliente.cs" />
     <None Include="DAL\Conexao.cs.bkp" />
-    <Compile Include="FabricaConexao.cs" />
+    <Compile Include="BLL\FabricaConexao.cs" />
     <Compile Include="UI\CadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,11 +120,23 @@
     <Compile Include="UI\CadastroFuncionarios.Designer.cs">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\CadastroPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CadastroPedidos.Designer.cs">
+      <DependentUpon>CadastroPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\CadastroProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\CadastroProdutos.Designer.cs">
       <DependentUpon>CadastroProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CadastroPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CadastroPagamentos.Designer.cs">
+      <DependentUpon>CadastroPagamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
@@ -155,8 +167,14 @@
     <EmbeddedResource Include="UI\CadastroFuncionarios.resx">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\CadastroPedidos.resx">
+      <DependentUpon>CadastroPedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\CadastroProdutos.resx">
       <DependentUpon>CadastroProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CadastroPagamentos.resx">
+      <DependentUpon>CadastroPagamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -9,9 +9,9 @@ namespace LojaInformatica
 {
 	internal class FabricaConexao
 	{
-		static MySqlConnection conexao = null;
+		MySqlConnection conexao = null;
 
-		public static MySqlConnection Conectar()
+		public MySqlConnection Conectar()
 		{
 			string conn = @"Persist Security Info = false;
 								server= localhost;
