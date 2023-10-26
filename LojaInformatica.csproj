@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\DAOCliente.cs" />
+    <Compile Include="BLL\DAOColaboradores .cs" />
+    <Compile Include="BLL\DAOFornecedores.cs" />
+    <Compile Include="BLL\DAOPagamentos.cs" />
+    <Compile Include="BLL\DAOPedido.cs" />
+    <Compile Include="BLL\DAOProduto.cs" />
     <Compile Include="BLL\Inserir.cs" />
     <Compile Include="DTO\Cliente.cs" />
     <None Include="DAL\Conexao.cs.bkp" />

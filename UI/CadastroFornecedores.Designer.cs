@@ -37,6 +37,8 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtInscEsta = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pagamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.txtInscEsta = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -116,6 +116,7 @@
             this.btnCadastrar.TabIndex = 20;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // dataGridView1
             // 
@@ -164,6 +165,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(631, 237);
             this.panel1.TabIndex = 18;
+            // 
+            // txtInscEsta
+            // 
+            this.txtInscEsta.Font = new System.Drawing.Font("Open Sans", 10F);
+            this.txtInscEsta.Location = new System.Drawing.Point(354, 176);
+            this.txtInscEsta.Name = "txtInscEsta";
+            this.txtInscEsta.Size = new System.Drawing.Size(248, 26);
+            this.txtInscEsta.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label7.Location = new System.Drawing.Point(350, 151);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 22);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Inscrição Estadual:";
             // 
             // txtEndereco
             // 
@@ -318,26 +339,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(855, 25);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // txtInscEsta
-            // 
-            this.txtInscEsta.Font = new System.Drawing.Font("Open Sans", 10F);
-            this.txtInscEsta.Location = new System.Drawing.Point(354, 176);
-            this.txtInscEsta.Name = "txtInscEsta";
-            this.txtInscEsta.Size = new System.Drawing.Size(248, 26);
-            this.txtInscEsta.TabIndex = 17;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(350, 151);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 22);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Inscrição Estadual:";
             // 
             // CadastroFornecedores
             // 
